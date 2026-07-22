@@ -7,8 +7,7 @@ class Bank:
         self.customers = []
 
     def add_customer(self):
-        for customer in self.customers:
-            self.customers.append(customer)
+        self.customers.append(customer)
 
     def find_customer(self):
         for customer in self.customers:
@@ -23,4 +22,4 @@ class Bank:
     def get_customer(self):
         for customer in self.customers:
             if customer in self.customers:
-                self.customers .index(customer)
+                self.customers.index(customer)
