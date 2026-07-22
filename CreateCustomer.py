@@ -2,7 +2,7 @@ from Bank import Bank
 
 class CreateCustomer:
 
-    def create_customer(self, bank):
+    def create_customer(self, bank, account_number, name, balance):
         name = input("Enter customer name:")
         account_number = input(int("Enter account number:"))
         balance = float(input("Enter starting balance:"))
