@@ -1,4 +1,5 @@
 from Bank import Bank
+from Customer import Customer
 
 class CreateCustomer:
 
