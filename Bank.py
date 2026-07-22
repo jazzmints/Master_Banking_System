@@ -11,6 +11,8 @@ class Bank:
         self.customers.append(customer)
 
     def find_customer(self, customer):
+        account_number = float(input("ENter Account Number: "))
+        
         for customer in self.customers:
             if customer.account_number == account_number:
                 return customer

@@ -4,14 +4,12 @@ from Customer import Customer
 
 class ReadCustomer:
 
-    def __init__(self, bank):
-        self.bank = bank
 
-    def display_bank(self):
+    def display_bank(self, bank):
         print("Customers")
         print("---------")
 
-        customers = self.bank.get_customer()
+        customers = bank.get_customer()
 
         if not customers:
             print("No Customers Found!")
