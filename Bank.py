@@ -3,6 +3,7 @@ from Customer import Customer
 
 # Defining Bank
 class Bank:
+    customers = Customer()
     def __init__(self):
 
         self.customers = []
