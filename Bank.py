@@ -3,12 +3,12 @@ from Customer import Customer
 
 # Defining Bank
 class Bank:
-    def __init__(self, customers):
+    def __init__(self):
+
         self.customers = []
 
     def add_customer(self):
-        for customer in self.customers:
-            self.customers.append(customer)
+        self.customers.append()
 
     def find_customer(self):
         for customer in self.customers:
@@ -23,4 +23,4 @@ class Bank:
     def get_customer(self):
         for customer in self.customers:
             if customer in self.customers:
-                self.customers .index(customer)
+                self.customers.index(customer)
