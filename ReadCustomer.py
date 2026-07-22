@@ -6,16 +6,16 @@ class ReadCustomer:
 
     def __init__(self, bank):
         self.bank = bank
-        
-    def display_bank(self, bank):
+
+    def display_bank(self):
         print("Customers")
         print("---------")
 
-        bank.get_customer()
+        customers = self.bank.get_customer()
 
-        if not self.customers():
+        if not customers:
             print("No Customers Found!")
             return
 
-        for customer in self.customers():
+        for customer in customers:
             customer.show_customer()

@@ -10,6 +10,9 @@ class DeleteCustomer:
 
     def delete(self, account_number, customer):
         account_number = int(input("Enter account number to delete: "))
-        
-        account_number.find_customer(customer)
-        customer.remove_customer()
+
+        customer = bank.find_customer(account_number)
+
+        if customer:
+            customer.remove_customer()
+            

@@ -10,13 +10,13 @@ def main():
 
     bank = Bank()
     createCustomer = CreateCustomer()
-    readCustomer = ReadCustomer()
+    readCustomer = ReadCustomer(bank)
     menu = Menu()
 
 
-    bank.add_customer(Customer("Jaz",12345,54321,500,6895494838))
-    bank.add_customer(Customer("Zay",6789,9876,200,676767676767))
-    bank.add_customer(Customer("Sam",12345,54321,500,2121212121))
+    bank.add_customer(Customer("Jaz",12345,54321))
+    bank.add_customer(Customer("Zay",6789,9876))
+    bank.add_customer(Customer("Sam",12345,54321))
 
 
     while True:
@@ -24,17 +24,18 @@ def main():
         choice=int(input("Enter menu choice:"))
 
         if choice == 1:
-            account = int(input("Account Number:"))
-            name = input("Customer Name:")
-            balance = float(input("Opening Balance:"))
 
-            bank.create_customer()
+            createCustomer.create_customer()
             
 
         elif choice == 2:
-            bank.show_customer()
+            readCustomer.display_bank()
 
         elif choice == 3:
+
+        elif choice == 4:
+
+        elif choice == 5:
             print("\n Thank you for using the bank system!")
             break
 
