@@ -6,7 +6,7 @@ class Customer:
         self.balance = balance
 
     def show_customer(self):
-        print("Enter Name: ", self.name)
+        print("Customer Name: ", self.name)
         print("Account_Number: ", self.account_number)
         print("Balance: ", self.balance)
 

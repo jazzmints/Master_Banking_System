@@ -5,23 +5,17 @@ from Customer import Customer
 class Bank:
     customers = Customer()
     def __init__(self):
+
         self.customers = []
 
-    def add_customer(self):
-        for customer in self.customers:
-            self.customers.append(customer)
-
-    def find_customer(self):
-        for customer in self.customers:
-            if customer in self.customers:
-                print(customer)
-
-    def remove_customer(self):
-        for customer in self.customers:
-            if customer in self.customers:
-                self.customers.remove(customer)
+    def add_customer(self, customer):
+        self.customers.append(customer)
 
     def get_customer(self):
-        for customer in self.customers:
-            if customer in self.customers:
-                self.customers.index(customer)
+        return self.customers()
+
+    def remove_customer(self, customer):
+        self.customers.remove(customer)
+
+    def get_customer(self, customer):
+        self.customers.index(customer)
