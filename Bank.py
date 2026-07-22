@@ -14,7 +14,8 @@ class Bank:
         for customer in self.customers:
             if customer.account_number == account_number:
                 return customer
-            
+        return None
+        
     def remove_customer(self, customer):
         self.customers.remove(customer)
 

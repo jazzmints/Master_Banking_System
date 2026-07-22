@@ -3,6 +3,8 @@ from Bank import Bank
 from CreateCustomer import CreateCustomer
 from ReadCustomer import ReadCustomer
 from DeleteCustomer import DeleteCustomer
+from UpdateCustomer import UpdateCustomer
+
 #from UpdateCustomer import UpdateCustomer
 from Menu import Menu
 
@@ -12,6 +14,8 @@ def main():
     createCustomer = CreateCustomer()
     readCustomer = ReadCustomer(bank)
     menu = Menu()
+    updateCustomer = UpdateCustomer()
+    removeCustomer = DeleteCustomer()
 
 
     bank.add_customer(Customer("Jaz",12345,54321))
@@ -25,15 +29,17 @@ def main():
 
         if choice == 1:
 
-            createCustomer.create_customer()
+            createCustomer.create_customer(bank)
             
 
         elif choice == 2:
-            readCustomer.display_bank()
+            readCustomer.display_bank(bank)
 
         elif choice == 3:
+            updateCustomer.update_customer(bank)
 
         elif choice == 4:
+            removeCustomerCustomer.remove_customer(bank)
 
         elif choice == 5:
             print("\n Thank you for using the bank system!")
